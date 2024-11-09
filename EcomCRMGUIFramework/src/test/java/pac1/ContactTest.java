@@ -7,6 +7,7 @@ public class ContactTest
 @Test
 public void createOrgTest()
 {
+	// create org
 	System.out.println("excecute createOrgTest");
 	String URL=System.getProperty("url");
 	String BROWSER=System.getProperty("browser","chrome");
