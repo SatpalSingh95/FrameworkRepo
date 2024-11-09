@@ -27,4 +27,11 @@ public void modifyOrgTest()
 	
 System.out.println("extecute modifyOrgTest");
 }
+
+@Test
+public void deleteContactTest()
+{
+	
+System.out.println("extecute deleteContactTest");
+}
 }
