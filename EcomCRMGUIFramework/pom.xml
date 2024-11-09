@@ -30,6 +30,11 @@
 
  </dependencies>
  
+ <profiles>   
+ <profile>
+ 
+ <id>ST</id>
+ 
  
  <build>
 <plugins>
@@ -41,7 +46,7 @@
       
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
+            <suiteXmlFile>testng_ST.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -49,4 +54,35 @@
 </plugins>
 
 </build>
+
+</profile>
+
+<profile>
+ 
+ <id>RT</id>
+ 
+ 
+ <build>
+<plugins>
+   
+      <plugin>
+       <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.18.1</version>
+      
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng_RT.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+    
+</plugins>
+
+</build>
+
+</profile>
+
+
+</profiles>
 </project>
